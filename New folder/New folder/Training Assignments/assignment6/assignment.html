@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.changed {
+  transform: matrix(1, 1, -1, 1, 40, 0);
+  background-color: pink;
+}
+
+
+div{ transition-duration:2s;
+
+
+    }
+    .matrix_class:hover{
+    transform:matrix(1, 1, 0, -1, 150, 50);
+    }
+
+    #main {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: 3;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+#main div:nth-of-type(4) {flex-grow: 1;}
+#main div:nth-of-type(5) {flex-grow: 1;}
+
+
+#flex-grow {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#flex-grow div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+#flex-grow div:nth-of-type(2) {
+  flex-shrink: 5;
+}#flex-grow div:nth-of-type(3) {
+  flex-shrink:3;
+}
+
+
+
+header nav {
+    background: pink;
+    display: flex;
+    align-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">home</a>
+            <a href="">services</a>
+            <a href="">feedback</a>
+            <a href="">about us</a>
+            <a href="">contact us</a>
+        </nav>
+    </header>
+    <h2>implementation of matrix function css</h2>
+    <div>Normal div </div>
+<div class="changed">Changed div</div><br><br>
+
+
+
+ 
+    
+    <p>Hover on the image to see the effect</p>
+    <div class="matrix_class"> Welcome to Neosoft </div>
+    <h2>
+        implementation flex grow property
+    </h2>
+    <div id="flex-grow">
+        <div style="background-color:coral;">1</div>
+        <div style="background-color:lightblue;">2</div>
+        <div style="background-color:khaki;">3</div>
+        <div style="background-color:pink;">4</div>
+        <div style="background-color:lightgrey;">5</div>
+      </div>
+      
+      <div id="main11">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:khaki;"></div>
+        <div style="background-color:pink;"></div>
+        <div style="background-color:lightgrey;"></div>
+      </div>
+<section>
+
+
+      </section>
+</body>
+</html>

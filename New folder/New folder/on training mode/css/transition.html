@@ -1,0 +1,76 @@
+<!DOCTYPE html>   <!-- html : html5 optional-->
+<!-- dtd : document type definition: validate tags u are using-->
+<html>
+<head>
+   <title>Paths Demo HTML</title>
+   <meta charset="UTF-8"> <!-- optional-->   <!-- Unicode Transformation Format- 8 bits-->
+   <meta name="keywords" content="important words of web page">
+   <meta name="description" content="short description of web page">
+   <meta name="author" content="author name">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <style>
+        .block{
+            border: 2px solid red;
+            height: 300px;
+            width: 100%;
+      background-color: pink;
+        }
+        #bl1{
+           background: royalblue;
+/* to bottom */
+        }
+        /* work only with numeric propery except  color */
+        #bl1:hover{
+            background-color: blue;
+            height: 600px;
+            width: 50px;
+            border: 5px dashed purple;
+            transition-property: height , width , border;
+            transition-duration: 5s;
+            transition-delay:5s ;
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+            /* ease-in , ease-out, ease-in-out */
+        }
+        #bl2{
+          background: red;
+        }
+        #bl2:hover{
+            height: 50px;
+            width: 20%;
+            transition: height 5s, width 10s 2s ease-in ;
+            /* transition: all 5s 5s ease-in; */
+        }
+        #bl3{
+            background-image: linear-gradient(-120deg,red,pink,yellow,green,blue);
+/* +ve, -ve */
+        }
+        #bl4{
+            background-image:radial-gradient(orange,pink,black,purple)
+/* ellipse, circule */
+        }
+    </style>
+</head>
+<body>
+    <div class="block" id="bl1">
+        hello how are u
+    </div>
+    <hr>
+    <div class="block" id="bl2">
+        hello how are u
+    </div>
+    <hr>
+    <div class="block" id="bl3">
+        hello how are u
+    </div>
+    <hr>
+    <div class="block" id="bl4">
+        hello how are u
+    </div>
+    <hr>
+    <div class="block" id="bl5">
+        hello how are u
+    </div>
+</body>
+</html>

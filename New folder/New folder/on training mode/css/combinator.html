@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* all child p element section as a parent should have a same color */
+        /* child selector:direct selector */
+        section>p{
+            color: yellow;
+        }
+        /* decendant selector : indirect child */
+        section p{
+            font-weight: bolder;
+        }
+        /* apply a style to p as a next sibling (single) of section */
+        section+p{
+            text-transform: uppercase;
+        }
+        /* apply a style to p as all adjacent sibling of section */
+        section~p{
+            border: 2px dashed red;
+        }
+        /* apply a style to any next sibling of section */
+        section+*{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+  <section>
+      <p>para1</p>
+      <p>para2</p>
+      <article>
+          <p>para4</p>
+          <p>para5</p>
+
+      </article>
+      <span>para6</span>
+      <p>para7</p><p>para8</p>
+  </section>  
+</body>
+</html>

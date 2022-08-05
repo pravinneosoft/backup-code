@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" crossorigin="anonymous" />
+ <style>
+     
+button.slick-prev.slick-arrow {
+    display: none !important;
+}
+button.slick-next.slick-arrow{
+    display: none !important;
+}
+     /* .your-class{
+         display: flex;
+         justify-content: space-between;
+     }
+     .single-item{
+        border: 2px solid red;
+    height: 408px;
+    width: 400px;
+     } */
+ </style>
+</head>
+  <body>
+
+  <div class="your-class">
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+    <div class="single-item">your content</div>
+  </div>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $('.your-class').slick({
+    dots: true,
+  infinite: false,
+  speed: 100,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+});
+  </script>
+  </body>
+</html>

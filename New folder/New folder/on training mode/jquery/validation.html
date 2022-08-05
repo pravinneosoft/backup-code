@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       span ,div{
+           color: red;
+       }
+   </style>
+</head>
+<body>
+    <form action="sucess.html" id="registrationform" novalidate><!---novalidate -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="myname"><br>
+        <span id="error1"></span><br><br>
+        <label>Email id:</label>
+        <input type="email" id="mailid" name="mail" ><br><br>
+        <span id="error2"></span><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="mypass"><br><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <span id="error3"></span><br><br>
+        <div id="er3"></div>
+
+        <label for="c_pass">Confirm Password:</label>
+        <input type="password" id="c_pass" name="mypass" ><br><br>
+        <span id="error4"></span><br><br>
+
+        <label for="age">Enter Age:</label>
+        <input type="text" id="age" placeholder="enter age" name="myage"><br><br>
+        <span id="error5"></span><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="validation.js"></script>
+
+</body>
+</html>

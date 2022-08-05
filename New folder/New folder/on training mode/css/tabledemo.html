@@ -1,0 +1,75 @@
+<!DOCTYPE html>   <!-- html : html5 optional-->
+<!-- dtd : document type definition: validate tags u are using-->
+<html>
+<head>
+   <title>Paths Demo HTML</title>
+   <meta charset="UTF-8"> <!-- optional-->   <!-- Unicode Transformation Format- 8 bits-->
+   <meta name="keywords" content="important words of web page">
+   <meta name="description" content="short description of web page">
+   <meta name="author" content="author name">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="my.css">
+<style>
+    h2{
+        color: lime;
+    }
+    #heading{
+color: darkorchid;
+    }
+    .head1{
+color: darkorange;
+    }
+
+    /* inline will override internal style which override external */
+    /* intrrnal id selector will override class/attibute which override external selector */
+    body{
+        background-image: url(../trainin/img/1.jpg);
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-position: top;
+        background-size: cover;   /* 200px , 100% , cover ,auto */
+    }
+    #table1{
+        
+    }
+</style>
+</head>
+<body>
+    <h2 style="color: red;" class="head1" id="heading">simple table</h2>
+    <table>
+        <caption>
+            Founders
+        </caption>
+        <thead><tr>
+            <td>1</td>
+            <td>Bill gates</td>
+            <td>
+                Founder of microsoft
+            </td>
+            <td>$1000</td>
+        </tr>
+    <tr><td>2</td><td>stev joobs</td><td>founder of apple</td><td>$1200</td>
+
+    </tr>
+    <tbody>
+
+    </tbody>
+    </thead>
+    </table>
+    <h2>table with cols pan and rawspan</h2>
+    <table border="5" id="table1">
+        <caption>founder</caption>
+        <thead>
+            <tr><th rawspan="2">Sr .no</th ><th colspan="2">Fullname</th></tr>
+            <tr><th>firstname</th><th>last name</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Bill</td><td>gates</td></tr>  
+    <tr><td>2</td><td>steve</td><td>jobs</td></tr>  
+    <tr><td>3</td ><td colspan="2">Lard</td></tr>
+</tbody>
+      
+    </table>
+</body>
+</html>

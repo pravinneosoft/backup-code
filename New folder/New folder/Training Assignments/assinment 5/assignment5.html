@@ -1,0 +1,188 @@
+<!DOCTYPE html>   <!-- html : html5 optional-->
+<!-- dtd : document type definition: validate tags u are using-->
+<html>
+<head>
+   <title>DEMO HTML</title>
+   <meta charset="UTF-8"> <!-- optional-->   <!-- Unicode Transformation Format- 8 bits-->
+   <meta name="keywords" content="important words of web page">
+   <meta name="description" content="short description of web page">
+   <meta name="author" content="author name">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       ::selection {
+  
+  background: blue;
+}
+       article section table tr td img{
+           border: 15px solid red;
+             border-image: url(news1.jpg) 30 round;
+           /* border-image: linear-gradient(red,green,blue,yellow )1 round;  */
+       }
+       article section table tr td #fimg1{
+           border: 15px solid red;
+             /* border-image: url(news1.jpg) 30 round; */
+           /* border-image: linear-gradient(red,green,blue,yellow )1 round;  */
+       }
+       article section table tr td #img1{
+          border: solid 10px red;
+         
+          border-image: linear-gradient(rgba(247, 214, 27, 0.897),rgb(124, 223, 124),black )1 round; 
+        }
+        article section table tr td #img1:hover{
+            border-image: linear-gradient(rgba(247, 27, 27, 0.897),rgb(0, 14, 209),black )1 round; 
+        }
+        article section table tr td #img2{
+          border:  10px dashed rgb(94, 73, 73);
+          
+        
+        }  article section table tr td #img3{
+          border: dotted 10px  blue;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+        }
+
+
+       article section .secondimg img{
+           border: 9px solid red;
+           /* border-image: url(front.jpg) 30 round;  */
+       }
+       article section table tr td .before1::before{
+        color: red;
+           content: "Thise is a ";
+       }
+       article section table tr td .after1::after{
+content:"Gangapur Damp after selector";
+color: red;
+       }
+       article section .third .fline{
+        border: 15px solid red;
+             border-image: url(news1.jpg) 30 round;
+text-align: justify;
+justify-content: center;
+       }
+       article section .third p{
+font-size: 22px;
+       }
+       article section .third .fline::first-line{
+color: rgb(238, 3, 3);
+background-color: black;
+text-decoration: underline;
+
+
+       }
+       article section .four{
+        background-image: repeating-linear-gradient(55deg,yellow ,black 5%,tomato 5%);
+ 
+text-align: justify;
+justify-content: center;
+       }
+       article section .four p{
+           color: #fff;
+       }
+       article section .four .fletter::first-letter{
+font-size: 30px;
+color: blueviolet;
+background: burlywood;
+       }
+
+
+
+       #grad1 {
+  height: 200px;
+  background-image: repeating-linear-gradient(45deg,yellow,black 7%,tomato 10%);
+}
+
+#grad2 {
+  height: 200px;
+  background-image: repeating-linear-gradient(190deg,yellow,black 7%,tomato 10%);
+}
+
+#grad3 {
+  height: 200px;
+  background-image: repeating-linear-gradient(90deg,yellow,black 7%,tomato 10%);
+}
+h1{
+    font-size: 32px;
+    
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: 
+    repeating-radial-gradient(
+      circle at 0 , 
+      pink,
+      rgb(243, 61, 92) 50px
+    );}
+    .box1 {
+  width: 90%;
+  height: 500px;
+  background: 
+    repeating-radial-gradient(
+     circle at 0 0, 
+      pink,
+      rgb(243, 61, 92) 20px ,
+      yellow 35px
+    );}
+   </style>
+</head>
+<body>
+<article>
+    <section>
+        <div class="third">
+            <h1>About us</h1>
+          <p class="fline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit corporis natus odio ipsum cumque blanditiis vero eaque, magni officia, consectetur perferendis qui vitae soluta consequuntur distinctio similique inventore voluptas . Velit corporis natus odio ipsum cumque blanditiis vero eaque, magni officia, consectetur perferendis qui vitae soluta consequuntur distinctio similique inventore voluptas arc. Velit corporis natus odio ipsum cumque blanditiis vero eaque, magni officia, consectetur perferendis qui vitae soluta consequuntur distinctio similique inventore voluptas arcarchitecto.</p>
+        </div>
+        <div class="four">
+            <h1>Services</h1>
+            <p class="fletter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit corporis natus odio ipsum cumque blanditiis vero eaque, magni officia, consectetur perferendis qui vitae soluta consequuntur distinctio similique inventore voluptas architecto.</p>
+          </div>
+        
+        
+        
+        <table>
+        <thead>Gallary</thead>
+        
+        <tr>
+            <td>
+                <img src="front.jpg" id="fimg1"height="300"width="400" alt="">
+                <p class="before1">Godavari Bridge Before selector</p>  
+            </td>
+            <td>
+                <img src="front.jpg" id="fimg2"height="300"width="400" alt="">
+                <p class="after1">Thise is a:-</p>  
+            </td>
+            <td>
+                <img src="news1.jpg" id="fimg3"height="300"width="400" alt="">
+                <p class="before1">Godavari Bridge</p>  
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="front.jpg" id="img1"height="300"width="400" alt="">
+                <p class="before1">Godavari Bridge Before selector</p>  
+            </td>
+            <td>
+                <img src="front.jpg" id="img2"height="300"width="400" alt="">
+                <p class="after1">Thise is a:-</p>  
+            </td>
+            <td>
+                <img src="news1.jpg" id="img3"height="300"width="400" alt="">
+                <p class="before1">Godavari Bridge</p>  
+            </td>
+        </tr>
+    </table>
+        
+        
+    </section>
+ <section>
+     <div class="box"></div><br><br>
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <div class="box3"></div>
+ </section>
+</article>
+
+    </body>
+    </html>

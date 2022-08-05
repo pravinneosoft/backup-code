@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       #article1{
+           column-count: 5;
+           column-width: 50px;
+           /* keep any one above property auto */
+           column-gap: 50px;
+           column-rule-style:solid ;
+           column-rule-width: 4px;
+       }
+       #article2{
+           columns: 5 auto;
+           column-gap: 40px;
+           column-rule: red double 3px;
+       }
+   </style>
+</head>
+<body> 
+<p id="article1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate ipsum asperiores quas soluta ratione numquam debitis, nobis consequuntur eligendi impedit neque voluptatem odit, in veniam! Quod cupiditate esse harum!</p>
+<hr>
+<p id="article2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate ipsum asperiores quas soluta ratione numquam debitis, nobis consequuntur eligendi impedit neque voluptatem odit, in veniam! Quod cupiditate esse harum!</p>
+
+
+
+
+    <button id="zoominbtn"> zoom in</button>
+    <figure>
+        <img src="../trainin/img/2.jpg"height="100"width="100" alt="no image" id="krishna1">
+    </figure>
+    <div class="block">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque iusto aut provident, laboriosam alias atque. Perspiciatis corrupti labore quisquam dicta.
+    </div>
+    <section class="block">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque iusto aut provident, laboriosam alias atque. Perspiciatis corrupti labore quisquam dicta.
+
+    </section>
+    <section class="block1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque iusto aut provident, laboriosam alias atque. Perspiciatis corrupti labore quisquam dicta.
+
+    </section>
+    <hr>
+    <article id="art"></article>
+    <button onclick="paste()">copy paste</button>
+    <br>
+    <input type="checkbox" name="courses" id="check" value="java" onchange="check()"><label>java</label>
+    <input type="checkbox" name="courses" id="check" value="python" onchange="check()"><label>python</label>
+    <script src="dom.js"></script>
+</body>
+</html>

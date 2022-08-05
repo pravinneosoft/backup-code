@@ -1,0 +1,27 @@
+$primary:red;
+$secondary:blu;
+$font:55px;
+$font-family:sans-serif;
+$navbar-collapse:flex-end;
+h2{
+    color: $secondary;
+    font-size: $font;
+    font-family:$font-family;
+}.navbar-collapse{
+    justify-content: $navbar-collapse;
+}
+
+.img-div{
+    position: relative;
+}
+.img-left-div{
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 900;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.342);
+    text-shadow: 2px 2px 5px #ffff;
+}

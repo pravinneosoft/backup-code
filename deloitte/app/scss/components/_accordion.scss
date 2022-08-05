@@ -1,0 +1,32 @@
+.accordion-button{
+    padding: 0.62rem 0 0.5rem 3.62rem;
+}
+.accordion-button::after {
+    background-image: url("../images/triangle.png");
+    position: absolute;
+    left: 1.25rem;
+    top: 1.4rem;
+}
+.accordion-button:not(.collapsed)::after{
+        background-image: url("../images/triangle.png");
+    }
+.accordion-item {
+border: none;
+}
+.accordion-heading{
+    background: rgba(227, 228, 141, 0.2);
+    font-size: 0.87rem;
+    line-height: 1.18rem;
+    font-weight: 700;
+    color: $color-grey;
+    display:inline-grid;
+    width: 60.93rem;
+}
+.accordion-subheading{
+    font-weight: 700;
+    font-size: 00.62rem;
+    color: rgba(0,0,0,0.5);
+}
+.accordion-body {
+padding: 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <section>
+            <header>
+                <h2>example of datalist</h2>
+            </header>
+            <datalist>
+                <option value="mango">mango</option>
+                <option value="vanilla">vanilla</option>
+                <option value="butterscotch">butterscotch</option>
+                <option value="coconut">coconut</option>
+            </datalist>
+            <form action="">
+                <label for="">choose icecream flavor</label>
+                <input type="list" id="" name="">
+                <input type="reset">
+
+            </form><br><br>
+            <section style="border: 2px double black;">
+                <figure>
+<img src="img/1.jpg" height="200" width="200" alt="no image">
+<figcaption> sky line</figcaption>
+<img src="img/111.jpg" height="200" width="200" alt="no image">
+<figcaption> sky line</figcaption>
+<img src="img/2.jpg" height="200" width="200" alt="no image">
+<figcaption> Beach area</figcaption>
+                </figure>
+            </section>
+        </section>
+        <section>
+            <label >fuel level</label>
+            <meter min="0" law="20" high="100" max="170" value="150">
+<!-- if value>=min and <law : orange 
+if value>=min and >high: orange
+if value>=min law <high : green -->
+            </meter>
+        </section>
+        <section>
+            <label for="">entere name</label>
+            <input type="text" id="myname" onblur="result.value=myname.value">
+            <b>
+                <output>
+
+                </output>
+            </b>
+            <form oninput="addresult.value=parseFloat(nu1.value)+parseFloat(num2.value)">
+            <input type="number"id="num1" value="0"><span>+</span>
+            <input type="number"id="num1" value="0"><span>=</span>
+            <output id="addresult"></output>
+            </form>
+        </section>
+
+
+        <section>
+            <canvas id="myCanvas" width="800" height="800"></canvas>
+<script type="text/javascript">
+    window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.moveTo(50, 150);
+        context.lineTo(250, 50);
+        context.stroke();
+        context.fillStyle="red";
+        context.fillrect(70,70,240,150);
+        context.rect(10,10,100,100);
+        context.stroke();
+        context.font="20px Georgia";
+        context.Filltext("welcomw to neosoft", 500,50);
+
+    };
+</script>
+        </section>
+    </article>
+</body>
+</html>

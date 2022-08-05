@@ -1,0 +1,86 @@
+header {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+    background-image: linear-gradient(180deg, #052f1c, #0000);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+
+
+    &-left {
+        position: relative;
+
+    }
+
+    &-left-content {
+        color: $color-white;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+
+        @include breakpoint (ipad-max) {
+            font-size: 18px;
+            position: initial;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 15px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 13px;
+        }
+    }
+
+    &-right {
+        display: flex;
+
+        @include breakpoint (ipad-max) {
+            display: initial;
+        }
+    }
+
+}
+.header__description {
+    padding: 0;
+    margin-top: 25px;
+
+    @include breakpoint (ipad-max) {
+        margin-top: 5px;
+    }
+}
+.header__triangle {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 26px solid $color-white;
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 22px solid $color-green;
+        position: absolute;
+        top: 3px;
+        left: -8px;
+
+        @include breakpoint (ipad-max) {
+            top: 4px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            top: 3px;
+        }
+    }
+}

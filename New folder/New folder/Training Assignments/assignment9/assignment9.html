@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript removeChild()</title>
+</head>
+<body>
+<h2>implementation of Replace Child method</h2>
+  <ul id="List"><li>Rose</li><li>Lotus</li><li>Hibiscus</li></ul>
+<button class="btn btn-primary" onclick="flower_list()">Click it</button>
+
+
+<h2>implementation of Remove Child method</h2>
+<ul id = "id_1">  
+  <li>John</li>  
+    <li>Rone</li>  
+    <li>Jessy</li>  
+    <li>Daisy</li>  
+    <li>Harry</li>  
+  </ul>
+  <button  onclick="ullist()">Remove items</button>
+  
+
+
+  <script>  function ullist(){
+     let getChild = document.getElementById("id_1");  
+     getChild.removeChild(getChild.childNodes[1]);
+    }
+     //Removing the first child in the list  
+     // getChild.removeChild(getChild.lastElementChild);
+     //To remove the last element in the list  
+  </script>  
+<script>
+    function flower_list() {
+        var textnode = document.createTextNode("Lily");
+        var item = document.getElementById("List").childNodes[0];
+        item.replaceChild(textnode, item.childNodes[0]);
+    }</script>
+</body>
+</html>
